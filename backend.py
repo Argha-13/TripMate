@@ -119,7 +119,7 @@ Flight Results:
 Hotel Results:
 {state['hotel_results']}
 
-Make the itinerary practical, budget-aware, and easy to follow.
+Make the itinerary practical, budget-aware, and easy to follow. Keep it concise and complete it within 800 tokens.
 """
 
     response = llm.invoke([
@@ -168,6 +168,7 @@ Important:
 - Be clear and practical.
 - Mention that live flight API may not provide ticket prices if pricing is unavailable.
 - Keep the response useful for real travel planning.
+- Keep the complete response within 800 tokens so every section is concluded.
 """
 
     response = llm.invoke([
